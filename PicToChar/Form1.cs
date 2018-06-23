@@ -112,7 +112,7 @@ namespace PicToChar
 			sb.Append(html_tail);
 
 			string tempFile = Path.GetTempFileName() + ".html";
-			File.WriteAllText(tempFile, sb.ToString());
+			File.WriteAllText(tempFile, sb.ToString().Replace("...", ".. "));
 			System.Diagnostics.Process.Start(tempFile);
 		}
 
