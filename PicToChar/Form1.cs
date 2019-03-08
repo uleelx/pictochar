@@ -24,11 +24,6 @@ namespace PicToChar
 			InitializeComponent();
 		}
 
-		private void button1_Click(object sender, EventArgs e)
-		{
-			pictureBox1.Image = System.Drawing.Image.FromFile(@"D:\desktop\11\TIM图片20180416123255.jpg");
-		}
-
 		private void button2_Click(object sender, EventArgs e)
 		{
 			if (pictureBox1.Image == null)
